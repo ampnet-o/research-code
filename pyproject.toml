@@ -1,0 +1,33 @@
+[project]
+name = "ampnet"
+version = "0.1.0"
+requires-python = "==3.12.0"
+dependencies = [
+    "numpy",
+    "orbax>=0.1.9",
+    "soundfile",
+    "flax",
+    "optax",
+    "librosa>=0.11.0",
+]
+
+[dependency-groups]
+gpu = [
+    "jax[cuda12]",
+]
+
+dev = [
+    "marimo",
+    "matplotlib"
+]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[tool.uv]
+package = true
+
+# [tool.marimo.runtime]
+# pythonpath = ["ampnet"]
+

@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# project specific
+__marimo__/
+data/
+notebooks/
+
+# Data files (adjust based on your needs)
+data/gml/*.wav
+# Alternatively, if you want to ignore all audio files in data directory:
+# data/**/*.wav
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Jupyter/Notebook checkpoints
+.ipynb_checkpoints/
+
+# Optional: ignore the start script if it contains sensitive info or is generated
+# start.sh
+
